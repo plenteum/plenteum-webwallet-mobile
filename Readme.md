@@ -1,7 +1,7 @@
 # Plenteum Mobile Wallet
 Official repository for the Android & Ios mobile wallet
 
-The project is using the [official masari webwallet](https://github.com/plenteum/plenteum-webwallet-js) and both projects are tightly linked together.
+The project is using the [official plenteum webwallet](https://github.com/plenteum/plenteum-webwallet-js) and both projects are tightly linked together.
 
 # Technologies
 The project is build using Apache Cordova and wraps the webwallet and adds native functionalities for a better user experience.  
