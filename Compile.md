@@ -3,9 +3,8 @@ To build the app, you need NodeJs and Apache Cordova. [See the instructions](htt
 Android & Ios dependencies are not part of this scope.
 
 # Steps
-As the project is build around the webwallet, the first thing to do is to download the content of the [official masari webwallet](https://github.com/masari-project/masari-webwallet)
-and put the content of the src directory inside the src directory of this repo (after compiling. See instructions in the upstream repository).
-Releases (master branch) are automatically compiled and the result can be downloaded on the [Gitlab mirror](https://gitlab.com/masari-project/masari-webwallet/-/jobs/artifacts/master/download?job=buid)
+As the project is build around the webwallet, the first thing to do is to download the content of the [official plenteum webwallet](https://github.com/plenteum/plenteum-webwallet-js)
+and put the content of the wwwroot directory inside the src directory of this repo (after compiling. See instructions in the upstream repository).
 
 Create a directory named "www", empty.
 
@@ -22,6 +21,6 @@ cordova run android
 ## Release APKs
 With the cordova cli, it is possible to generate signed APKs with the following command 
 ```
-cordova build android --release -- --keystore="../MasariKey/MobileAppAndroid.jks" --alias=key0 --password=XXXX --storePassword=XXX
+cordova build android --release -- --keystore="../Keys/MobileAppAndroid.jks" --alias=key0 --password=XXXX --storePassword=XXX
 ```
-where ```../MasariKey/MobileAppAndroid.jks``` is the path to the keystore and ```key0``` is the key alias
+where ```../Keys/MobileAppAndroid.jks``` is the path to the keystore and ```key0``` is the key alias

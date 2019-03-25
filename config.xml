@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.masari.wallet" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Masari</name>
+<widget id="com.plenteum.wallet" version="0.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Plenteum</name>
     <description>
-		Official Masari Wallet
+		Official Plenteum Wallet
     </description>
-    <author email="dev@getmasari.org" href="https://getmasari.org">
-        Masari Team
+    <author email="support@plenteum.com" href="https://www.plenteum.com">
+        Plenteum Development Team
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
@@ -16,7 +16,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <hook src="scripts/beforeBuild.bat" type="before_build" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
@@ -48,6 +47,7 @@
         <splash src="res/screen/ios/Default@2x~ipad~comany.png" />
     </platform>
     <platform name="android">
+		<hook src="scripts/beforeBuild.bat" type="before_build" />
         <allow-intent href="market:*" />
         <preference name="SplashMaintainAspectRatio" value="true" />
         <preference name="SplashShowOnlyFirstTime" value="true" />
@@ -73,5 +73,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
     <plugin name="cordova-plugin-app-version" spec="^0.1.9" />
-    <engine name="android" spec="^7.0.0" />
+    <engine name="android" spec="^7.1.4" />
 </widget>
